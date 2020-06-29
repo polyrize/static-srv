@@ -17,7 +17,6 @@ const createInstance = (options) => {
   if (index) {
     const indexFile = path.resolve(index)
     app.get(['/', '*'], (request, response, next) => {
-      console.log('here', request.url)
       response.sendFile(indexFile)
     })
   }
@@ -27,7 +26,6 @@ const createInstance = (options) => {
 
 class App {
   constructor (options) {
-    console.log('options', options)
     const {port, directory, index} = {...defaultOptions, ...options}
     this.port = port
     this.directory = directory
