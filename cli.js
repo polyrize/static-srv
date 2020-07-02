@@ -21,5 +21,6 @@ app.start().then((app) => {
   console.log(getStartMessage(`Server is up:\nhttp://localhost:${app.port}`, app))
 })
 
-process.on('SIGTERN', () => app.stop())
-process.on('SIGINT', () => app.stop())
+process.on('SIGTERN', () => process.exit())
+process.on('SIGINT', () => process.exit())
+process.on('exit', () => app.stop())
