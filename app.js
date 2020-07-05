@@ -42,7 +42,9 @@ class App {
 
   stop (callback) {
     return (new Promise((resolve) => {
-      this.server?.close(() => resolve(this))
+      if (this.server && this.server.close) {
+        this.server.close(() => resolve(this))
+      }
     }))
   }
 }

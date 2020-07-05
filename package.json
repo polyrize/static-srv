@@ -1,10 +1,10 @@
 {
   "name": "@polyrize/static-srv",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Serves a static server for single page applications",
   "main": "index.js",
   "bin": {
-    "static-srv": "cli.js"
+    "static-srv": "./cli.js"
   },
   "scripts": {
     "start": "node index",
