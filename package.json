@@ -1,6 +1,6 @@
 {
   "name": "@polyrize/static-srv",
-  "version": "1.0.12",
+  "version": "1.1.0",
   "description": "Serves a static server for single page applications",
   "main": "index.js",
   "bin": {
