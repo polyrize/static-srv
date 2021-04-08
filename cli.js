@@ -19,8 +19,6 @@ args
 
 const flags = args.parse(process.argv)
 
-console.log('flags', flags)
-
 const app = new App(getComputedFlags(flags))
 
 app.start().then((app) => {
